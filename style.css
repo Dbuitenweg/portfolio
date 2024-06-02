@@ -223,18 +223,18 @@ p{             /*de p zelf aanpassen*/
     margin-bottom: 5%;
 }
 
-.phyton-photo img, .pathe-photo img, .burger-photo img{
+.ah-kraten img, .pathe-photo img, .burger-photo img{
     width: 80%;
     height: auto;
     border-radius: 10px;
 }
 
-.phyton-photo, .pathe-photo, .burger-photo{
+.ah-kraten, .pathe-photo, .burger-photo{
     padding-top: 5%;
 }
 
 @media  screen and (max-width:1000px) {
-    .phyton-photo img, .pathe-photo img, .burger-photo img{
+    .ah-kraten img, .pathe-photo img, .burger-photo img{
         width: 80%;
         height: auto;
     }
