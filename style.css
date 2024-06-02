@@ -1,0 +1,410 @@
+/* alles pagina*/
+header, main {
+    width: 100%;
+    box-sizing: border-box;
+}
+body{           /* aanpassingen doen in de body*/
+    background:linear-gradient(rgb(215, 98, 98),white);
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+main{          /*aanpassingen doen in de body*/
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 50px;
+    letter-spacing: 0.1rem;
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+}   
+
+footer{
+    background-color:rgb(161, 160, 160);
+    margin-bottom: 0;
+    padding: 0;
+}
+footer h2{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+    color: black;
+}
+footer li{
+    list-style-type: none;
+}
+
+
+.body1, .body2, .body3{         /*aanpassingen doen in de 3 bodie*/
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.body3{  /* bij derder pagina alle text lings hebben*/
+    text-align: left;
+}
+
+@media screen and (max-width: 800px){           /*@als het vreem kleiner dan 800px wordt wordt alles hierin aangepast*/
+    .body1, .body2, .body3{
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+h1 {            /* de h1 zelf aanpassen*/
+    display: flex;
+    justify-content: center;
+}
+
+h2{             /*de h2 zeelf aanpassen*/
+    padding-top: 5vh;
+}
+
+p{             /*de p zelf aanpassen*/
+    padding-top: 3vh;
+}
+
+
+
+.head{             /*de head zelf aanpassen*/
+    display: flex;
+    list-style-type: none;
+    margin: -10px;
+    padding: 40px;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);   
+}
+
+.head a{            /*de ancures aanpassen in de head*/
+    text-decoration: none;  /*de lijnen weg halen van de anchors*/
+    color: black;
+}
+
+.head a:hover{          /*de ancures aanpassen om te hoveren*/
+    padding: 10px 20px;
+    font-size: 25px;
+    color:red;
+    transition: all 0.3s ease;
+}
+ 
+.head a:active {            /*de ancures aanpassen  voor de active state*/
+    color:darkred;
+    padding: 10px 20px;
+    margin: 10px;
+} 
+
+
+
+/*end alles pagina*/  
+
+
+/* home pagina*/
+
+.slinger-p{
+    background-image: url(img/background3.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 1%;
+}
+
+.slinger-p h1, h2{
+    color: white;
+}
+
+.introductie p{
+    border-bottom: solid black;
+    padding-bottom: 5%;
+}
+
+.introductie h2{        /*de intriductie aanpassen*/
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.first video{
+    width: 10%;
+    height: auto;
+}
+
+.overzicht h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ibiza img{
+    width: 50%;
+    height: auto;
+   border-radius: 10px;
+}
+
+.ibiza{
+    padding-top: 5vh;
+    margin-bottom: 30%;
+}
+
+@media screen and (max-width: 1000px){
+    .ibiza img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+
+/*end home pagina*/
+
+/* werk pagina*/
+
+.categorieen{
+    box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
+    padding: 10px;
+    margin-top: 40px;
+    background-color:rgba(197, 194, 191, 0.605);
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.projecten{
+    padding-left: 15%;
+    padding-right: 15%; 
+}
+
+.flex, .flex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+}
+
+.pathe-project p, .heel-holland-kookt p, .albert-heijn-wk p{
+    font-weight: bolder;
+}
+
+.pathe-project{
+    background-image: url(img/pathe-logo2.png);
+    color: rgb(0, 0, 0)
+}
+
+.heel-holland-kookt{
+    margin-right: 5%;
+    margin-left: 5%;
+    background-image: url(img/burger-logo2.png);
+}
+.albert-heijn-wk{
+    background-image: url(img/albertheijn-logo2.png);
+}
+
+.pathe-project, .heel-holland-kookt, .albert-heijn-wk{
+    box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
+    padding: 10px;
+    margin-top: 50px;
+    flex:1;
+    border-radius: 10px;
+}
+
+.pathe-photo img{
+    margin-bottom: 5%;
+}
+
+.phyton-photo img, .pathe-photo img, .burger-photo img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.phyton-photo, .pathe-photo, .burger-photo{
+    padding-top: 5%;
+}
+
+@media  screen and (max-width:1000px) {
+    .phyton-photo img, .pathe-photo img, .burger-photo img{
+        width: 80%;
+        height: auto;
+    }
+
+    .flex{
+        display: block;
+        
+    }
+    .heel-holland-kookt{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .projecten{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+}  
+
+/*end werk pagina*/
+
+/* about me pagina*/
+
+.body3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-gif {
+    flex: 1;
+    margin: 10px;
+}
+
+
+.img-gif video {
+    width: 80%; 
+    height: auto;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+   
+    .img-gif {
+      flex: 100%; 
+    }
+}
+
+.over-mij{
+    border-bottom: solid black;
+}
+
+.werk-boven{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*end about me pagina*/
+
+/* contact pagina*/
+
+.social{
+    list-style-type: none; /* de bullet points weg halen*/
+    display: flex;  /* flex box gebruiken voor columen*/
+    flex-direction: column;
+    align-items: start;
+}
+
+@media screen and (max-width: 400px){
+    .social{
+        font-size: smaller;
+    }
+}
+
+.social li{
+    padding: 10px;
+    margin-left: -30px;
+}
+
+.social a{
+    color: black;
+}
+
+.social-media h2{
+    display: flex;
+    justify-content:start ;
+    margin-left: 5%;
+}
+
+
+.contact h2 {
+    display: flex;
+    justify-content:start ;
+    margin-left: 0%;
+}
+
+.input-field{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    outline: none;
+    display: block;
+}
+
+.input-field-textarea{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 14px;
+    outline: none;
+    display: block;
+}
+
+.textarea ::placeholder{
+    display: flex;
+    align-items: flex-start;
+}
+
+.btnsubmit{
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 18px;
+    padding: 10px;
+    background-color: rgb(215, 98, 98);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid black;
+    box-shadow: var(--shd,0 5px 10px rgba(0,0,0,.6));
+}
+
+.contactpagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.social-media, .planten, .contact {
+  width: calc(33.33% - 10px); /* Adjust width and margin as needed */
+  margin-bottom: 20px;
+}
+
+.planten-right img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:950px) {
+    .social-media, .planten, .contact{
+        width: 100%;
+    }
+    .planten-right img{
+        margin-top: 5%;
+        width:50%;
+    }
+    .btnsubmit{
+        display: flex;
+        justify-content: left;
+        padding-left: 30px;
+    }
+}
+/*end contact pagina*/
