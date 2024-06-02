@@ -44,8 +44,8 @@ footer li{
 
 
 .body1, .body2, .body3{         /*aanpassingen doen in de 3 bodie*/
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 .body3{  /* bij derder pagina alle text lings hebben*/
@@ -188,13 +188,14 @@ p{             /*de p zelf aanpassen*/
 }
 
 .flex{
-    min-height: 100vh;
     box-sizing: border-box;
     padding-bottom: 60px;
 }
 
 .pathe-project p, .heel-holland-kookt p, .albert-heijn-wk p{
     font-weight: bolder;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .pathe-project{
@@ -217,6 +218,7 @@ p{             /*de p zelf aanpassen*/
     margin-top: 50px;
     flex:1;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .pathe-photo img{
@@ -232,6 +234,8 @@ p{             /*de p zelf aanpassen*/
 .ah-kraten, .pathe-photo, .burger-photo{
     padding-top: 5%;
 }
+
+
 
 @media  screen and (max-width:1000px) {
     .ah-kraten img, .pathe-photo img, .burger-photo img{
@@ -254,6 +258,122 @@ p{             /*de p zelf aanpassen*/
     }
     
 }  
+
+/*Styling Pop-up als er op een project item wordt gedrukt*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 50px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+.modal1 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 50px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow-y:auto;/* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal2 {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 50px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content (styling content in de popup)*/
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	overflow-y: auto;
+}
+
+.modal-content h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+.modal1 img{
+	width: 50%;
+	height: 50%;
+}
+
+.modal img, .modal2 img{
+	width: 30%;
+	height: 30%;
+}
+  
+/*Knopje om de modal weer te closen*/
+.close{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close1{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close2{
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+/*als er over het knopje wordt gehovered wordt het knopje zwart en de cursor wordt een pointer*/
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.close2:hover,
+.close2:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 /*end werk pagina*/
 
