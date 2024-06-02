@@ -43,9 +43,14 @@ footer li{
 }
 
 
-.body1, .body2, .body3{         /*aanpassingen doen in de 3 bodie*/
+.body1, .body3{         /*aanpassingen doen in de 3 bodie*/
     margin-left: 300px;
     margin-right: 300px;
+}
+
+.body2{
+    margin-right: 150px;
+    margin-left: 150px;
 }
 
 .body3{  /* bij derder pagina alle text lings hebben*/
@@ -118,8 +123,13 @@ p{             /*de p zelf aanpassen*/
     padding: 1%;
 }
 
-.slinger-p h1, h2{
+.slinger-p h1{
     color: white;
+}
+
+.slinger-p h2{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .introductie p{
@@ -219,6 +229,7 @@ p{             /*de p zelf aanpassen*/
     flex:1;
     border-radius: 10px;
     cursor: pointer;
+    background-color: white;
 }
 
 .pathe-photo img{
